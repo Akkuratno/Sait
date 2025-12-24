@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Влияние спорта на жизнь</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__row">
+      <a class="logo" href="#home" aria-label="На главную">
+        <span class="logo__mark">🏅</span>
+        <span class="logo__text">Спорт & Жизнь</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#about">О теме</a>
+        <a class="nav__link" href="#effects">Влияние</a>
+        <a class="nav__link" href="#tips">Советы</a>
+        <a class="nav__link" href="#quiz">Мини-тест</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Сменить тему">🌙</button>
+        <button class="iconbtn burger" id="burger" type="button" aria-label="Открыть меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Влияние спорта на жизнь</h1>
+          <p class="lead">
+            Спорт влияет не только на <b>здоровье</b>, но и на <b>психологию</b> и <b>общение</b>.
+            Этот мини-сайт — коротко и наглядно.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#effects">Посмотреть влияние</a>
+            <a class="btn btn--ghost" href="#quiz">Пройти мини-тест</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__n">3</div>
+              <div class="stat__t">сферы влияния</div>
+            </div>
+            <div class="stat">
+              <div class="stat__n">1</div>
+              <div class="stat__t">страница</div>
+            </div>
+            <div class="stat">
+              <div class="stat__n">0</div>
+              <div class="stat__t">сложных установок</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="glass">
+            <div class="glass__tag">Коротко</div>
+            <h2 class="glass__title">Что даёт спорт?</h2>
+            <ul class="checklist">
+              <li>больше энергии и выносливости</li>
+              <li>меньше стресса и лучше сон</li>
+              <li>дисциплина и уверенность</li>
+              <li>команда и новые знакомства</li>
+            </ul>
+            <p class="muted small">
+              Важно: нагрузка должна быть разумной и регулярной.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>О чём этот сайт</h2>
+          <p class="muted">
+            Спорт — часть физической культуры и здорового образа жизни. Он влияет на организм, эмоции и социальную среду.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Физическое</h3>
+            <p class="muted">Сердце, лёгкие, мышцы, осанка, выносливость и общий тонус.</p>
+          </article>
+          <article class="card">
+            <h3>Психологическое</h3>
+            <p class="muted">Снижение стресса, дисциплина, мотивация, самооценка.</p>
+          </article>
+          <article class="card">
+            <h3>Социальное</h3>
+            <p class="muted">Команда, общение, поддержка семьи и друзей, новые связи.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="effects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Как спорт влияет на жизнь</h2>
+          <p class="muted">Нажми на карточку — появится подробность.</p>
+        </div>
+
+        <div class="grid3" id="effectCards">
+          <button class="card card--click" data-title="Физическое влияние" data-text="Регулярные тренировки улучшают работу сердечно-сосудистой и дыхательной систем, повышают выносливость, укрепляют мышцы и помогают поддерживать нормальный вес. Важно соблюдать технику и отдых.">
+            <div class="pill">❤️ Физическое</div>
+            <h3>Здоровье и тонус</h3>
+            <p class="muted">Выносливость, сила, осанка, энергия.</p>
+          </button>
+
+          <button class="card card--click" data-title="Психологическое влияние" data-text="Физическая активность помогает снижать стресс, улучшает настроение, формирует самодисциплину и устойчивую мотивацию. Прогресс в тренировках повышает уверенность в себе.">
+            <div class="pill">🧠 Психологическое</div>
+            <h3>Настроение и характер</h3>
+            <p class="muted">Стресс, воля, самооценка.</p>
+          </button>
+
+          <button class="card card--click" data-title="Социальное влияние" data-text="Спорт развивает навыки общения и сотрудничества (особенно в команде), расширяет круг знакомств и укрепляет поддержку со стороны семьи/друзей. Важно избегать токсичной конкуренции и давления ожиданий.">
+            <div class="pill">👥 Социальное</div>
+            <h3>Общение и поддержка</h3>
+            <p class="muted">Команда, лидерство, друзья.</p>
+          </button>
+        </div>
+
+        <div class="modal" id="modal" aria-hidden="true">
+          <div class="modal__backdrop" id="modalBackdrop"></div>
+          <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal__top">
+              <h3 id="modalTitle">Заголовок</h3>
+              <button class="iconbtn" id="modalClose" type="button" aria-label="Закрыть">✕</button>
+            </div>
+            <p class="muted" id="modalText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="container">
+        <div class="section__head">
+          <h2>3 простых совета</h2>
+          <p class="muted">Чтобы спорт приносил пользу, а не проблемы.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <div class="pill">✅ Регулярность</div>
+            <h3>Лучше чаще, но легче</h3>
+            <p class="muted">2–4 тренировки в неделю по 30–60 минут лучше, чем редкие «рывки».</p>
+          </article>
+          <article class="card">
+            <div class="pill">🧩 Подбор нагрузки</div>
+            <h3>Выбирай “свой” формат</h3>
+            <p class="muted">Команда, зал, бег, танцы — главное, чтобы было интересно и безопасно.</p>
+          </article>
+          <article class="card">
+            <div class="pill">🛌 Восстановление</div>
+            <h3>Сон и отдых — часть спорта</h3>
+            <p class="muted">Разминка, вода, сон и дни отдыха снижают риск травм и перегрузок.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="quiz">
+      <div class="container">
+        <div class="section__head">
+          <h2>Мини-тест</h2>
+          <p class="muted">Отметь варианты и узнай свой результат.</p>
+        </div>
+
+        <form class="quiz" id="quizForm">
+          <div class="quiz__q">
+            <div class="quiz__t">1) После активности я чаще чувствую:</div>
+            <label><input type="radio" name="q1" value="2"> бодрость</label>
+            <label><input type="radio" name="q1" value="1"> нейтрально</label>
+            <label><input type="radio" name="q1" value="0"> усталость/раздражение</label>
+          </div>
+
+          <div class="quiz__q">
+            <div class="quiz__t">2) Спорт помогает мне:</div>
+            <label><input type="radio" name="q2" value="2"> держать режим</label>
+            <label><input type="radio" name="q2" value="1"> иногда дисциплинирует</label>
+            <label><input type="radio" name="q2" value="0"> почти не влияет</label>
+          </div>
+
+          <div class="quiz__q">
+            <div class="quiz__t">3) Как часто я двигаюсь активно:</div>
+            <label><input type="radio" name="q3" value="2"> почти каждый день</label>
+            <label><input type="radio" name="q3" value="1"> 1–3 раза в неделю</label>
+            <label><input type="radio" name="q3" value="0"> редко</label>
+          </div>
+
+          <div class="quiz__actions">
+            <button class="btn btn--primary" type="button" id="calcBtn">Показать результат</button>
+            <button class="btn btn--ghost" type="reset">Сбросить</button>
+          </div>
+
+          <div class="result" id="result" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="callout">
+          <div>
+            <h3 class="callout__title">Хочешь добавить раздел “Мой прогресс”?</h3>
+            <p class="muted">Могу сделать трекер тренировок с сохранением (localStorage) — без сложностей.</p>
+          </div>
+          <a class="btn btn--primary" href="#home">Наверх</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
